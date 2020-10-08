@@ -6,7 +6,7 @@ namespace Clase_Visual_Studio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(";););)");
+            public static Ejercicios.Ejercicio1();
         }
     }
 }
