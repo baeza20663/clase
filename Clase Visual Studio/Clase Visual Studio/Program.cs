@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-           Ejercicios.GetMultiResult(0,7);
+            // Ejercicios.GetMultiResult(0,7);
+            Fibonacci.CalculateFibonacciNumber();
         }
     }
 }
