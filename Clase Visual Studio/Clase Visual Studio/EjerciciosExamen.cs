@@ -1,4 +1,9 @@
-﻿namespace Clase_Visual_Studio
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Clase_Visual_Studio
 {
     class EjerciciosExamen
     {
@@ -24,11 +29,16 @@
         {
            return str1 + str2 + str3;
         }
-        // public static string Compare2Integer(int number1, int number2)
-        
-                 // if (number1 < number2) 
-                 // return a < b;
-        
+         public static int Compare2Integer(int number1, int number2)
+        {
+            if (number1 < number2)
+                return number2;
+            else return number1;
+
+        }
+
+
+
         public static int Compare2numbers(int number1, int number2)
         {
             if (number1 == number2) return 0;
@@ -142,6 +152,36 @@
                         System.Console.Write("/");
                         break;
                 }
+            }
+        }
+        public static void ConvertDecimalToBinary()
+        {
+            int contador;
+            contador = 0;
+            double dividendo;
+            dividendo = System.Convert.ToInt32(System.Console.ReadLine());
+            double resto;
+            double cociente;
+            string resultado;
+            resultado = "";
+            while (dividendo > 0)
+            {
+                resto = dividendo % 2;
+                cociente = Math.Floor(dividendo / 2);
+                System.Console.Write(resto);
+                resultado = resultado + (resto);
+                dividendo = cociente;
+                contador++;
+            }
+            
+            System.Console.WriteLine("");
+            System.Console.WriteLine("El resultado es: " + resultado);
+            System.Console.WriteLine("Son " + contador + " dígitos");
+
+            for (int i = resultado.Length; i > 0; i--)
+            {
+                System.Console.WriteLine(i);
+                // no va imprimir al revés "resultado" System.Console.Write(resultado.Substring(i,1));
             }
         }
 

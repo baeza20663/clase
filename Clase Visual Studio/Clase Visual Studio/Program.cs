@@ -4,10 +4,7 @@
     {
         static void Main(string[] args)
         {
-            // Ejercicios.GetMultiResult(0,7);
-            /*Fibonacci.CalculateFibonacciNumber();*/
-
-            EjerciciosExamen.Symbols3(8);
+            EjerciciosExamen.ConvertDecimalToBinary();
 
         }
     }
