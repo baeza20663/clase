@@ -184,6 +184,24 @@ namespace Clase_Visual_Studio
                 // no va imprimir al revés "resultado" System.Console.Write(resultado.Substring(i,1));
             }
         }
+        public static void PrintAsteriskMatrix(int n)
+        {
+            
+            for (int f=0; f<n; f++)
+            {
+                int espacios1 = n - f - 1;
+                int espacios2 = f * 2;
+
+                for (int c = 0; c <= f; c++)
+                {
+                    System.Console.Write("+");
+                }
+                System.Console.WriteLine("*");
+                // Imprimir la siguiente fila
+                System.Console.WriteLine();
+            }                
+            
+        }
 
     }
 
