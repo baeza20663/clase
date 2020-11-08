@@ -78,7 +78,7 @@ namespace Clase_Visual_Studio
             sumando = 0;
             System.Console.WriteLine("funcion (" + number + ")");
 
-            while (true)
+            while (true) // este ejercicio es mejor hacerlo con un for
             {
                 System.Console.Write(sumando + ",");
                 sumando = sumando + 3;
@@ -159,6 +159,7 @@ namespace Clase_Visual_Studio
             int contador;
             contador = 0;
             double dividendo;
+            System.Console.Write("Introduce el número decimal a convertir a binario:");
             dividendo = System.Convert.ToInt32(System.Console.ReadLine());
             double resto;
             double cociente;
@@ -175,31 +176,40 @@ namespace Clase_Visual_Studio
             }
             
             System.Console.WriteLine("");
-            System.Console.WriteLine("El resultado es: " + resultado);
+            System.Console.WriteLine("El resultado es: " + "'" + resultado + "'");
             System.Console.WriteLine("Son " + contador + " dígitos");
 
-            for (int i = resultado.Length; i > 0; i--)
+            
+
+            for (int contador3 = resultado.Length; contador3 > 0 ; contador3--)
             {
-                System.Console.WriteLine(i);
-                // no va imprimir al revés "resultado" System.Console.Write(resultado.Substring(i,1));
+                
+                System.Console.Write(resultado.Substring(contador3 - 1, 1));
+                // contador3--;
             }
         }
-        public static void PrintAsteriskMatrix(int n)
+        public static void PrintAsteriskMatrix()
         {
-            
-            for (int f=0; f<n; f++)
+            int n;
+            System.Console.Write("Introduce el número de columnas:");
+            n = Convert.ToInt32(System.Console.ReadLine());
+
+            for (int f=1; f<=n; f++)
             {
-                int espacios1 = n - f - 1;
+                int espacios1 = n - f + 1;
                 int espacios2 = f * 2;
 
-                for (int c = 0; c <= f; c++)
+                for (int c = 1; c <= f; c+=1)
                 {
-                    System.Console.Write("+");
-                }
-                System.Console.WriteLine("*");
-                // Imprimir la siguiente fila
+                    for (int l = 1; l < espacios1; l++)
+                    {
+                        System.Console.Write("+");
+                    } // fin de la impresión de loquesea antes del asterisco
+                    System.Console.Write("*");
+                } // fin del contador de COLUMNAS c
+                               
                 System.Console.WriteLine();
-            }                
+            }  // fin del contador de FILAS f              
             
         }
 

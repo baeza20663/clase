@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.PrintAsteriskMatrix(4);
+            EjerciciosExamen.ConvertDecimalToBinary();
 
         }
     }
