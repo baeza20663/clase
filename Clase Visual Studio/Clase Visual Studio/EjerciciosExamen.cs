@@ -270,7 +270,83 @@ namespace Clase_Visual_Studio
             }
 
         }
+        public static void Ejercicio2241()
+        {
+            while (true)
+            {
+                System.Console.Write("Hola y ");
+            }
+        }
+        public static void Ejercicio2242()
+        {
+            int contador = 1;
 
+            while (true)
+            {
+                for (int c = 0; c < 500000000; c++) // temporizador para que aparezcan más lentos
+                { 
+                }
+
+                
+                System.Console.Write(contador + ",");
+                contador++;
+            }
+
+        }
+        public static void Ejercicio2251()
+        {
+            for (int d = 1; d < 5; d++)
+            {
+
+
+                for (int c = 1; c < 6; c++)
+                {
+
+                    System.Console.Write(c);
+
+                }
+                System.Console.Write("/");
+            }
+            
+
+        }
+        public static void Ejercicio2252()
+        {
+            for (int d = 1; d < 5; d++)
+            {
+                int c = 1;
+
+                while (c < 6)
+                {
+
+                
+
+                    System.Console.Write(c);
+                    c++;
+                }
+
+                System.Console.Write("/");
+            }
+
+
+        }
+        public static void Ejercicio2253()
+        {
+            for (int d = 10; d < 21; d++)
+            {
+                
+
+                   
+                    if (d%5 == 0 || d%7 == 0 || d%6 == 0) 
+                    System.Console.WriteLine(d + " es múltiplo de 5,6 ó 7");
+                   
+            }
+            System.Console.WriteLine();
+
+        }
     }
+
+
+    
 
 }

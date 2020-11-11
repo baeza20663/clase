@@ -4,8 +4,12 @@
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.Ejercicio2236();
-
+            EjerciciosExamen.Ejercicio2253();
+            //DrawFlags.JapanFlag();
         }
     }
 }
+
+
+        
+        

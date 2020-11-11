@@ -1,4 +1,7 @@
-﻿namespace Clase_Visual_Studio
+﻿using System;
+using System.Numerics;
+
+namespace Clase_Visual_Studio
 {
     class Geometry
     {
@@ -12,6 +15,15 @@
             return length;
         }
 
+        public static double GetDistance2D(double x1, double y1, double x2, double y2)
+        {
+            double vx;
+            double vy;
+
+            vx = x2 - x1;
+            vy = y2 - y1;
+            return Math.Sqrt(vx * vx + vy * vy);
+        }
     }
     class Geometry3d
     {
@@ -57,4 +69,5 @@
         }
         
     }
+   
 }
