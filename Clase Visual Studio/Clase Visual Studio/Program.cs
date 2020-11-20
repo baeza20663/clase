@@ -4,9 +4,16 @@
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.Ejercicio2253();
+            int x;
+            x = 1;
+            while (x > 0)
+            {
+                x = System.Convert.ToInt32(System.Console.ReadLine());
             
-            //DrawFlags.JapanFlag();
+                EjerciciosExamen.Sumatorio(x);
+            }
+            System.Console.WriteLine("Se acabó");
+            
         }
     }
 }

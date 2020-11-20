@@ -344,6 +344,28 @@ namespace Clase_Visual_Studio
             System.Console.WriteLine();
 
         }
+        public static void Cuadradode2(int x)
+        {
+            int acumulador1 = 1; int acumulador2 = 0;
+            for (int c = 0; c < x; c++)
+            {
+                acumulador2 = acumulador1 * 2;
+                acumulador1 = acumulador2;
+            }
+            System.Console.WriteLine("2 elevado a " + x + " es: " + acumulador1);
+
+        }
+        public static void Sumatorio(int x1)
+        {
+            int acumulador1 = 0; int acumulador2 = 0;
+            for (int c = 1; c < x1+1; c++)
+            {
+                acumulador2 = acumulador1 + c;
+                acumulador1 = acumulador2;
+            }
+            System.Console.WriteLine("La suma de 1 hasta " + x1 + " es:" + acumulador1);
+
+        }
     }
 
 

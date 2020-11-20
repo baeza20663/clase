@@ -1,16 +1,6 @@
-static void Main(string[] args)
-        {
-            int num = 3;
-            if(EsPrimo(num))
-            {
-                //Es un número primo
-            }
-            else
-            {
-                //No es un número primo
-            }
-        }
-        static bool EsPrimo(int numero)
+class Primo
+{
+        static bool sPrimo(int numero)
         {
             for (int i = 2; i < numero; i++)
             {
@@ -23,3 +13,4 @@ static void Main(string[] args)
             // Es primo :)
             return true;
         }
+}
